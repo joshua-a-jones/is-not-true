@@ -1,0 +1,17 @@
+{
+  "name": "is-not-true",
+  "version": "1.0.0",
+  "description": "Returns true if a given boolean is not true, and false if it is true",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "utility"
+  ],
+  "author": "Joshua Jones",
+  "license": "MIT",
+  "dependencies": {
+    "is-true": "^0.1.1"
+  }
+}
