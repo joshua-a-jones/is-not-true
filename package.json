@@ -2,7 +2,7 @@
   "name": "is-not-true",
   "author": "Joshua Jones",
   "license": "MIT",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Returns true if a given boolean is not true, and false if it is true",
   "repository": {
     "type": "git",
