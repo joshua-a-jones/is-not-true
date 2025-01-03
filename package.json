@@ -2,8 +2,12 @@
   "name": "is-not-true",
   "author": "Joshua Jones",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Returns true if a given boolean is not true, and false if it is true",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joshua-a-jones/is-not-true.git"
+  },
   "main": "index.js",
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
@@ -14,6 +18,12 @@
     "true",
     "false",
     "not"
+  ],
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE",
+    "package.json"
   ],
   "dependencies": {
     "is-true": "^0.1.1"
