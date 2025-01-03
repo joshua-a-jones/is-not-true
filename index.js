@@ -1,17 +1,3 @@
-/*!
-
- * is-not-true <https://github.com/joshua-a-jones/is-not-true>
-
- *
-
- * Copyright (c) 2025, Joshua Jones.
-
- * Licensed under the MIT License.
-
- */
-
-import isTrue from "is-true"
-
 /**
  * Checks if a boolean value is not true.
  * @param {boolean} value - The boolean value to check.
@@ -22,9 +8,7 @@ const isNotTrue = (value) => {
         throw new TypeError("is-not-true expects a boolean value")
     }
 
-    const wrapper = { booleanValue: value }
-
-    return !isTrue(wrapper, 'booleanValue')
+    return value !== true;
 }
 
-module.exports = isNotTrue;
+export default isNotTrue

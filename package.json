@@ -1,18 +1,28 @@
 {
   "name": "is-not-true",
+  "author": "Joshua Jones",
+  "license": "MIT",
   "version": "1.0.0",
   "description": "Returns true if a given boolean is not true, and false if it is true",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "keywords": [
-    "utility"
+    "utility",
+    "boolean",
+    "true",
+    "false",
+    "not"
   ],
-  "author": "Joshua Jones",
-  "license": "MIT",
   "dependencies": {
-    "is-true": "^0.1.1",
-    "mocha": "^11.0.1"
+    "is-true": "^0.1.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "type": "module",
+  "jest": {
+    "transform": {}
   }
 }

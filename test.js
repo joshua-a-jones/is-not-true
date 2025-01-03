@@ -1,18 +1,26 @@
-import mocha from "mocha";
-import isNotTrue from "../index";
+import { describe, it, expect } from "@jest/globals";
+import isNotTrue from "./index.js";
 
-mocha.describe("test", () => {
-    mocha.it("should return true if argument is false", () => {
-        mocha.assert.strictEqual(isNotTrue(false), true);
+describe("isNotTrue", () => {
+    it("should return true if argument is false", () => {
+        expect(isNotTrue(false)).toBe(true);
     });
 
-    mocha.it("should return false if argument is true", () => {
-        mocha.assert.strictEqual(isNotTrue(true), false);
+    it("should return false if argument is true", () => {
+        expect(isNotTrue(true)).toBe(false);
     });
 
-    mocha.it("should throw a TypeError if argument is not a boolean", () => {
-        mocha.assert.throws(() => {
+    it("should throw a TypeError if argument is not a boolean", () => {
+        expect(() => {
             isNotTrue("true");
-        }, TypeError);
+        }).toThrow(TypeError);
+
+        expect(() => {
+            isNotTrue(1);
+        }).toThrow(TypeError);
+
+        expect(() => {
+            isNotTrue({});
+        }).toThrow(TypeError);
     });
 });
